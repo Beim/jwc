@@ -58,8 +58,7 @@ const parseList = (data) => {
 }
 
 const updateFile = (newsList) => {
-    // let fileList = JSON.parse(fs.readFileSync(DB))
-    let fileList = []
+    let fileList = JSON.parse(fs.readFileSync(DB))
     let hash = {}
     let next = []
     for (let i of fileList) {
